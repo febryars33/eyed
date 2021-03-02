@@ -1,2 +1,2 @@
-# eyed
-my custom bootstrap 4
+# eyed | Bootstrap 4
+Reimagined traditional approaches by using flat style and refreshing tones for buttons, navbars, and labels.
