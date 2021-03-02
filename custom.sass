@@ -1,0 +1,68 @@
+.btn-success,.btn-warning {
+  color: $white;
+}
+
+.btn-outline-success:hover {
+  color: $white;
+}
+
+.btn-success.disabled, .btn-success:disabled {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-warning.disabled, .btn-warning:disabled {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+    color: $white;
+}
+
+// Light btn
+@each $name, $color in (primary, $primary),(success, $success),(danger, $danger),(warning, $warning),(info, $info),(secondary, $secondary){
+   .btn-light-#{$name} {
+      background-color: rgba($color, .1);
+      border: rgba($color, .1);
+      color: $color;
+   }
+}
+
+@each $name, $color in (primary, $primary),(success, $success),(danger, $danger),(warning, $warning),(info, $info),(secondary, $secondary){
+   .btn-light-#{$name}:hover {
+      background-color: rgba($color, .2);
+      border: rgba($color, .2);
+      color: $color;
+   }
+}
+
+// Inverted btn
+@each $name, $color in (primary, $primary),(success, $success),(danger, $danger),(warning, $warning),(info, $info),(secondary, $secondary){
+   .btn-inverted-#{$name} {
+      background-color: rgba($color, .0);
+      border: rgba($color, .0);
+      color: $color;
+   }
+}
+
+@each $name, $color in (primary, $primary),(success, $success),(danger, $danger),(warning, $warning),(info, $info),(secondary, $secondary){
+   .btn-inverted-#{$name}:hover {
+      background-color: $gray-100;
+      border: rgba($color, .0);
+      color: $color;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
